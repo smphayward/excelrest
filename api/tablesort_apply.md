@@ -21,7 +21,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField[]|The list of conditions to sort on.|
+|fields|SortField|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
 |method|SortMethod|Optional. The ordering method used for Chinese characters.|
 
@@ -39,11 +39,23 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/apply
 Content-type: application/json
-Content-length: 73
+Content-length: 275
 
 {
   "fields": [
     {
+      "key": 99,
+      "sortOn": {
+      },
+      "ascending": true,
+      "color": "color-value",
+      "dataOption": {
+      },
+      "icon": {
+        "set": {
+        },
+        "index": 99
+      }
     }
   ],
   "matchCase": true,

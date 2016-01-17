@@ -21,7 +21,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField[]|The list of conditions to sort on.|
+|fields|SortField|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
 |hasHeaders|boolean|Optional. Whether the range has a header.|
 |orientation|SortOrientation|Optional. Whether the operation is sorting rows or columns.|
@@ -41,11 +41,23 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/sort/apply
 Content-type: application/json
-Content-length: 119
+Content-length: 321
 
 {
   "fields": [
     {
+      "key": 99,
+      "sortOn": {
+      },
+      "ascending": true,
+      "color": "color-value",
+      "dataOption": {
+      },
+      "icon": {
+        "set": {
+        },
+        "index": 99
+      }
     }
   ],
   "matchCase": true,
