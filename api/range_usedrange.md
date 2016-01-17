@@ -21,7 +21,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|valuesOnly|bool|Optional. Considers only cells with values as used cells.|
+|valuesOnly|boolean|Optional. Considers only cells with values as used cells.|
 
 ### Response
 If successful, this method returns `, ` response code and [Range](../resources/range.md) object in the response body.

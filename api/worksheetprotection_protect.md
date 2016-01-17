@@ -36,10 +36,21 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/protection/protect
 Content-type: application/json
-Content-length: 54
+Content-length: 383
 
 {
   "options": {
+    "allowFormatCells": true,
+    "allowFormatColumns": true,
+    "allowFormatRows": true,
+    "allowInsertColumns": true,
+    "allowInsertRows": true,
+    "allowInsertHyperlinks": true,
+    "allowDeleteColumns": true,
+    "allowDeleteRows": true,
+    "allowSort": true,
+    "allowAutoFilter": true,
+    "allowPivotTables": true
   },
   "password": "password-value"
 }

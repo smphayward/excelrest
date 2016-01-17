@@ -21,7 +21,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|across|bool|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
+|across|boolean|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
 
 ### Response
 If successful, this method returns `, ` response code. It does not return anything in the response body.

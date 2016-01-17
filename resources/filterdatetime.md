@@ -1,0 +1,50 @@
+# FilterDatetime resource type
+
+Represents how to filter a date when filtering on values.
+
+
+### Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get FilterDatetime](../api/filterdatetime_get.md) | [FilterDatetime](filterdatetime.md) |Read properties and relationships of filterDatetime object.|
+|[Update](../api/filterdatetime_update.md) | [FilterDatetime](filterdatetime.md)	|Update FilterDatetime object. |
+
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|date|string|The date in ISO8601 format used to filter data.|
+
+### Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|specificity|[FilterDatetimeSpecificity](filterdatetimespecificity.md)|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009.|
+
+### JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.filterdatetime"
+}-->
+
+```json
+{
+  "date": "string"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "FilterDatetime resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

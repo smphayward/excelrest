@@ -37,10 +37,26 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/apply
 Content-type: application/json
-Content-length: 23
+Content-length: 294
 
 {
   "criteria": {
+    "criterion1": "criterion1-value",
+    "criterion2": "criterion2-value",
+    "color": "color-value",
+    "operator": {
+    },
+    "icon": {
+      "set": {
+      },
+      "index": 99
+    },
+    "dynamicCriteria": {
+    },
+    "values": {
+    },
+    "filterOn": {
+    }
   }
 }
 ```
