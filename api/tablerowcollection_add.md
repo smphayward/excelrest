@@ -38,13 +38,15 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/rows/add
 Content-type: application/json
-Content-length: 39
+Content-length: 51
 
 {
   "index": {
   },
-  "values": {
-  }
+  "values": [
+    {
+    }
+  ]
 }
 ```
 

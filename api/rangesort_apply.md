@@ -41,11 +41,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/sort/apply
 Content-type: application/json
-Content-length: 107
+Content-length: 119
 
 {
-  "fields": {
-  },
+  "fields": [
+    {
+    }
+  ],
   "matchCase": true,
   "hasHeaders": true,
   "orientation": {
