@@ -21,11 +21,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField[|The list of conditions to sort on.|
-|matchCase|[Optional|Optional. Whether to have the casing impact string ordering.|
-|hasHeaders|[Optional|Optional. Whether the range has a header.|
-|orientation|[Optional|Optional. Whether the operation is sorting rows or columns.|
-|method|[Optional|Optional. The ordering method used for Chinese characters.|
+|fields|SortField[]|The list of conditions to sort on.|
+|matchCase|bool|Optional. Whether to have the casing impact string ordering.|
+|hasHeaders|bool|Optional. Whether the range has a header.|
+|orientation|SortOrientation|Optional. Whether the operation is sorting rows or columns.|
+|method|SortMethod|Optional. The ordering method used for Chinese characters.|
 
 ### Response
 If successful, this method returns `, ` response code. It does not return anything in the response body.
@@ -41,15 +41,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/sort/apply
 Content-type: application/json
-Content-length: 109
+Content-length: 107
 
 {
   "fields": {
   },
-  "matchCase": {
-  },
-  "hasHeaders": {
-  },
+  "matchCase": true,
+  "hasHeaders": true,
   "orientation": {
   },
   "method": {

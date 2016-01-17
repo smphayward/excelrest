@@ -21,9 +21,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField[|The list of conditions to sort on.|
-|matchCase|[Optional|Optional. Whether to have the casing impact string ordering.|
-|method|[Optional|Optional. The ordering method used for Chinese characters.|
+|fields|SortField[]|The list of conditions to sort on.|
+|matchCase|bool|Optional. Whether to have the casing impact string ordering.|
+|method|SortMethod|Optional. The ordering method used for Chinese characters.|
 
 ### Response
 If successful, this method returns `, ` response code. It does not return anything in the response body.
@@ -39,13 +39,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/apply
 Content-type: application/json
-Content-length: 62
+Content-length: 61
 
 {
   "fields": {
   },
-  "matchCase": {
-  },
+  "matchCase": true,
   "method": {
   }
 }
