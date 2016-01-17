@@ -20,7 +20,7 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/protection
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 Do not supply a request body for this method.

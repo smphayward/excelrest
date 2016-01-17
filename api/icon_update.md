@@ -13,7 +13,7 @@ PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/fields/icon
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -21,7 +21,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|int|Represents the index of the icon in the given set.|
-|set|IconSet|Represents the set that the icon is part of.|
+|set|string|Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Icon](../resources/icon.md) object in the response body.
@@ -35,9 +35,10 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/fields/icon
 Content-type: application/json
-Content-length: 17
+Content-length: 39
 
 {
+  "set": "set-value",
   "index": 99
 }
 ```
@@ -51,9 +52,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 17
+Content-length: 39
 
 {
+  "set": "set-value",
   "index": 99
 }
 ```

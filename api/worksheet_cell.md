@@ -12,7 +12,7 @@ POST /workbook/worksheets(<id|name>)/Cell
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -23,7 +23,7 @@ In the request body, provide a JSON object with the following parameters.
 |column|number|the column number of the cell to be retrieved. Zero-indexed.|
 
 ### Response
-If successful, this method returns `, ` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.

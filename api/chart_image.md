@@ -12,7 +12,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/Image
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -21,10 +21,10 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |height|number|Optional. (Optional) The desired height of the resulting image.|
 |width|number|Optional. (Optional) The desired width of the resulting image.|
-|fittingMode|ImageFittingMode|Optional. (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."|
+|fittingMode|string|Optional. (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ### Response
-If successful, this method returns `, ` response code and [System.IO.Stream](../resources/system.io.stream.md) object in the response body.
+If successful, this method returns `200, OK` response code and [System.IO.Stream](../resources/system.io.stream.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -37,15 +37,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/Image
 Content-type: application/json
-Content-length: 63
+Content-length: 77
 
 {
   "height": {
   },
   "width": {
   },
-  "fittingMode": {
-  }
+  "fittingMode": "fittingMode-value"
 }
 ```
 

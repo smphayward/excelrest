@@ -14,7 +14,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -24,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 |criteria|FilterCriteria|The criteria to apply.|
 
 ### Response
-If successful, this method returns `, ` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -37,7 +37,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/apply
 Content-type: application/json
-Content-length: 294
+Content-length: 321
 
 {
   "criteria": {
@@ -47,16 +47,13 @@ Content-length: 294
     "operator": {
     },
     "icon": {
-      "set": {
-      },
+      "set": "set-value",
       "index": 99
     },
-    "dynamicCriteria": {
-    },
+    "dynamicCriteria": "dynamicCriteria-value",
     "values": {
     },
-    "filterOn": {
-    }
+    "filterOn": "filterOn-value"
   }
 }
 ```

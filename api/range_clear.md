@@ -14,17 +14,17 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|applyTo|string|Optional. Determines the type of clear action.  Possible values are: All`, `Formats`, `Contents`.|
+|applyTo|string|Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.|
 
 ### Response
-If successful, this method returns `, ` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.

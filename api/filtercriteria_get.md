@@ -20,7 +20,7 @@ GET /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter/
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 Do not supply a request body for this method.
@@ -46,12 +46,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
+Content-length: 146
 
 {
   "criterion1": "criterion1-value",
   "criterion2": "criterion2-value",
-  "color": "color-value"
+  "color": "color-value",
+  "dynamicCriteria": "dynamicCriteria-value"
 }
 ```
 

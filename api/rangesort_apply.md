@@ -14,7 +14,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/sort/apply
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -24,11 +24,11 @@ In the request body, provide a JSON object with the following parameters.
 |fields|SortField|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
 |hasHeaders|boolean|Optional. Whether the range has a header.|
-|orientation|SortOrientation|Optional. Whether the operation is sorting rows or columns.|
-|method|SortMethod|Optional. The ordering method used for Chinese characters.|
+|orientation|string|Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.|
+|method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
 ### Response
-If successful, this method returns `, ` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -41,31 +41,26 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/sort/apply
 Content-type: application/json
-Content-length: 321
+Content-length: 358
 
 {
   "fields": [
     {
       "key": 99,
-      "sortOn": {
-      },
+      "sortOn": "sortOn-value",
       "ascending": true,
       "color": "color-value",
-      "dataOption": {
-      },
+      "dataOption": "dataOption-value",
       "icon": {
-        "set": {
-        },
+        "set": "set-value",
         "index": 99
       }
     }
   ],
   "matchCase": true,
   "hasHeaders": true,
-  "orientation": {
-  },
-  "method": {
-  }
+  "orientation": "orientation-value",
+  "method": "method-value"
 }
 ```
 

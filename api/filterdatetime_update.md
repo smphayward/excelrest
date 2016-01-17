@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API:
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -19,7 +19,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |date|string|The date in ISO8601 format used to filter data.|
-|specificity|FilterDatetimeSpecificity|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009.|
+|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. Possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [FilterDatetime](../resources/filterdatetime.md) object in the response body.
@@ -33,10 +33,11 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 26
+Content-length: 64
 
 {
-  "date": "date-value"
+  "date": "date-value",
+  "specificity": "specificity-value"
 }
 ```
 ##### Response
@@ -49,10 +50,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 26
+Content-length: 64
 
 {
-  "date": "date-value"
+  "date": "date-value",
+  "specificity": "specificity-value"
 }
 ```
 

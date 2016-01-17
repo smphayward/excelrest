@@ -12,14 +12,14 @@ POST /workbook/bindings
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, supply a JSON representation of [Binding](../resources/binding.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Binding](../resources/binding.md) object in the response body.
+If successful, this method returns `200, OK` response code and [Binding](../resources/binding.md) object in the response body.
 
 ### Example
 ##### Request

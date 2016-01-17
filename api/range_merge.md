@@ -14,7 +14,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -24,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 |across|boolean|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
 
 ### Response
-If successful, this method returns `, ` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.

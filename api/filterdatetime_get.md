@@ -18,7 +18,7 @@ The following **scopes** are required to execute this API:
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 Do not supply a request body for this method.
@@ -44,10 +44,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 26
+Content-length: 64
 
 {
-  "date": "date-value"
+  "date": "date-value",
+  "specificity": "specificity-value"
 }
 ```
 

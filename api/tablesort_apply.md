@@ -14,7 +14,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/apply
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -23,10 +23,10 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |fields|SortField|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
-|method|SortMethod|Optional. The ordering method used for Chinese characters.|
+|method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
 ### Response
-If successful, this method returns `, ` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -39,28 +39,24 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/apply
 Content-type: application/json
-Content-length: 275
+Content-length: 298
 
 {
   "fields": [
     {
       "key": 99,
-      "sortOn": {
-      },
+      "sortOn": "sortOn-value",
       "ascending": true,
       "color": "color-value",
-      "dataOption": {
-      },
+      "dataOption": "dataOption-value",
       "icon": {
-        "set": {
-        },
+        "set": "set-value",
         "index": 99
       }
     }
   ],
   "matchCase": true,
-  "method": {
-  }
+  "method": "method-value"
 }
 ```
 

@@ -12,7 +12,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/setPosition
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -23,7 +23,7 @@ In the request body, provide a JSON object with the following parameters.
 |endCell|string|Optional. (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
 
 ### Response
-If successful, this method returns `, ` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.

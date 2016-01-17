@@ -14,11 +14,11 @@ Represents a cell icon.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|int|Represents the index of the icon in the given set.|
+|set|string|Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|set|[IconSet](iconset.md)|Represents the set that the icon is part of.|
+None
+
 
 ### JSON representation
 
@@ -34,7 +34,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "index": 1024
+  "index": 1024,
+  "set": "string"
 }
 
 ```

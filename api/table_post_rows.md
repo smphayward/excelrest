@@ -14,14 +14,14 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `200, OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ### Example
 ##### Request

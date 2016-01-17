@@ -14,17 +14,17 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders/Item
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Authorization  | string  | Bearer <code>|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|string|Index value of the border object to be retrieved.  Possible values are: EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`.|
+|index|string|Index value of the border object to be retrieved.  Possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`.|
 
 ### Response
-If successful, this method returns `, ` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns `200, OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.

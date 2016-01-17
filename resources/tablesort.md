@@ -16,12 +16,12 @@ Manages sorting operations on Table objects.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |matchCase|boolean|Represents whether the casing impacted the last sort of the table. Read-only.|
+|method|string|Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|[SortField](sortfield.md)|Represents the current conditions used to last sort the table. Read-only.|
-|method|[SortMethod](sortmethod.md)|Represents Chinese character ordering method last used to sort the table. Read-only.|
 
 ### JSON representation
 
@@ -37,7 +37,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "matchCase": true
+  "matchCase": true,
+  "method": "string"
 }
 
 ```
