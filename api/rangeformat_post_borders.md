@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /workbook/names(<name>)/range/format/borders
+POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders
+POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_rangeborder_from_rangeformat"
 }-->
 ```http
-
+POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/borders
 Content-type: application/json
 Content-length: 136
 

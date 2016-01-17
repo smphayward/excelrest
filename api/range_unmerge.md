@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /workbook/names(<name>)/range/unmerge
+POST /workbook/worksheets(<id|name>)/range(<address>)/unmerge
+POST /workbook/tables(<id|name>)/columns(<id|name>)/range/unmerge
 
 ```
 ### Request headers
@@ -28,7 +30,7 @@ Here is an example of the request.
   "name": "range_unmerge"
 }-->
 ```http
-
+POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/unmerge
 ```
 
 ##### Response

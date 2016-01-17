@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /workbook/names(<name>)/range/EntireColumn
+POST /workbook/worksheets(<id|name>)/range(<address>)/EntireColumn
+POST /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireColumn
 
 ```
 ### Request headers
@@ -28,7 +30,7 @@ Here is an example of the request.
   "name": "range_entirecolumn"
 }-->
 ```http
-
+POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/EntireColumn
 ```
 
 ##### Response

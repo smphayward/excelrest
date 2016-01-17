@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /workbook/names(<name>)/range/format/fill
+PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/fill
+PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -30,7 +32,7 @@ Here is an example of the request.
   "name": "update_rangefill"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/fill
 Content-type: application/json
 Content-length: 28
 

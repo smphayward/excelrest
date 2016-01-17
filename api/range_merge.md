@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /workbook/names(<name>)/range/merge
+POST /workbook/worksheets(<id|name>)/range(<address>)/merge
+POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
 
 ```
 ### Request headers
@@ -33,7 +35,7 @@ Here is an example of the request.
   "name": "range_merge"
 }-->
 ```http
-
+POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/merge
 Content-type: application/json
 Content-length: 20
 

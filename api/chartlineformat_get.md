@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line
+GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line
+GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -32,7 +34,7 @@ Here is an example of the request.
   "name": "get_chartlineformat"
 }-->
 ```http
-
+GET https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

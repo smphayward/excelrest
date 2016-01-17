@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /workbook/worksheets/Item
 
 ```
 ### Request headers
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "worksheetcollection_item"
 }-->
 ```http
-
+POST https://graph.microsoft.com/beta/workbook/worksheets/Item
 Content-type: application/json
 Content-length: 24
 

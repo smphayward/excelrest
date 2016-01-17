@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /workbook/tables(<id|name>)/columns(<id|name>)/filter
+GET /workbook/bindings(<id>)/table/columns(<id|name>)/filter
+GET /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -32,7 +34,7 @@ Here is an example of the request.
   "name": "get_filter"
 }-->
 ```http
-
+GET https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

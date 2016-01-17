@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /workbook/worksheets(<id|name>)/charts(<name>)
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_chart"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)
 Content-type: application/json
 Content-length: 52
 

@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /workbook/names(<name>)/range/format/borders(<sideIndex>)
+GET /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
+GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -32,7 +34,7 @@ Here is an example of the request.
   "name": "get_rangeborder"
 }-->
 ```http
-
+GET https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/borders(<sideIndex>)
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -17,24 +17,6 @@ None
 |fill|[ChartFill](chartfill.md)|Represents the fill format of the current chart data label. Read-only.|
 |font|[ChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
 
-### JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartdatalabelformat"
-}-->
-
-```json
-{
-}
-
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

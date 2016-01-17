@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
+POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line/clear
+POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
 
 ```
 ### Request headers
@@ -28,7 +30,7 @@ Here is an example of the request.
   "name": "chartlineformat_clear"
 }-->
 ```http
-
+POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
 ##### Response
