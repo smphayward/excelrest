@@ -10,6 +10,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 |[Get NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Read properties and relationships of namedItem object.|
 |[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)	|Update NamedItem object. |
 |[Range](../api/nameditem_range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
+|[List](../api/nameditem_list.md) | [NamedItem](nameditem.md) collection |Get namedItem object collection. |
 
 ### Properties
 | Property	   | Type	|Description|

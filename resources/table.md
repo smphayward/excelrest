@@ -21,6 +21,11 @@ Represents an Excel table.
 |[Converttorange](../api/table_converttorange.md)|[Range](range.md)|Converts the table into a normal range of cells. All data is preserved.|
 |[Delete](../api/table_delete.md)|None|Deletes the table.|
 |[Reapplyfilters](../api/table_reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
+|[List](../api/table_list.md) | [Table](table.md) collection |Get table object collection. |
+|[Itemat](../api/tablecollection_itemat.md)|[Table](table.md)|Gets a table based on its position in the collection.|
+|[Add](../api/tablecollection_add.md)|[Table](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
+
+
 
 ### Properties
 | Property	   | Type	|Description|

@@ -16,8 +16,11 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |[Cell](../api/worksheet_cell.md)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.|
 |[Range](../api/worksheet_range.md)|[Range](range.md)|Gets the range object specified by the address or name.|
 |[Usedrange](../api/worksheet_usedrange.md)|[Range](range.md)|The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.|
-|[Activate](../api/worksheet_activate.md)|None|Activate the worksheet in the Excel UI.|
 |[Delete](../api/worksheet_delete.md)|None|Deletes the worksheet from the workbook.|
+|[List](../api/worksheet_list.md) | [Worksheet](worksheet.md) collection |Get worksheet object collection. |
+|[Add](../api/worksheetcollection_add.md)|[Worksheet](worksheet.md)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. |
+
+
 
 ### Properties
 | Property	   | Type	|Description|

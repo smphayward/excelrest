@@ -15,7 +15,6 @@ Workbook is the top level object which contains related workbook objects such as
 |[List tables](../api/workbook_list_tables.md) |[Table](table.md) collection| Get a Table object collection.|
 |[Create Worksheet](../api/workbook_post_worksheets.md) |[Worksheet](worksheet.md)| Create a new Worksheet by posting to the worksheets collection.|
 |[List worksheets](../api/workbook_list_worksheets.md) |[Worksheet](worksheet.md) collection| Get a Worksheet object collection.|
-|[Selectedrange](../api/workbook_selectedrange.md)|[Range](range.md)|Gets the currently selected range from the workbook.|
 
 ### Properties
 None

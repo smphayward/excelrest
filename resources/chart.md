@@ -15,6 +15,9 @@ Represents a chart object in a workbook.
 |[Delete](../api/chart_delete.md)|None|Deletes the chart object.|
 |[Setdata](../api/chart_setdata.md)|None|Resets the source data for the chart.|
 |[Setposition](../api/chart_setposition.md)|None|Positions the chart relative to cells on the worksheet.|
+|[List](../api/chart_list.md) | [Chart](chart.md) collection |Get chart object collection. |
+|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
+|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Creates a new chart.|
 
 ### Properties
 | Property	   | Type	|Description|

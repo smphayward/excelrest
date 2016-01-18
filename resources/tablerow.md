@@ -11,6 +11,9 @@ Represents a row in a table.
 |[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)	|Update TableRow object. |
 |[Range](../api/tablerow_range.md)|[Range](range.md)|Returns the range object associated with the entire row.|
 |[Delete](../api/tablerow_delete.md)|None|Deletes the row from the table.|
+|[List](../api/tablerow_list.md) | [TableRow](tablerow.md) collection |Get tableRow object collection. |
+|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Gets a row based on its position in the collection.|
+|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Adds a new row to the table.|
 
 ### Properties
 | Property	   | Type	|Description|
