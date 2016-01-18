@@ -14,7 +14,7 @@ Represents the protection of a sheet object.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|protected|boolean|Indicates if the worksheet is protected. Read-Only. Read-only.|
+|protected|boolean|Indicates if the worksheet is protected.  Read-only.|
 
 ### Relationships
 | Relationship | Type	|Description|

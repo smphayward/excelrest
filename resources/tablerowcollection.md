@@ -12,34 +12,11 @@ Represents a collection of all the rows that are part of the table.
 |[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Adds a new row to the table.|
 
 ### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|count|int|Returns the number of rows in the table. Read-only.|
-|items|[TableRow[]](tablerow[].md) collection|A collection of tableRow objects. Read-only.|
+None
 
 ### Relationships
 None
 
-
-### JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tablerowcollection"
-}-->
-
-```json
-{
-  "count": 1024,
-  "items": [{"@odata.type": "microsoft.graph.TableRow[]"}]
-}
-
-```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
