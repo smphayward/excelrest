@@ -23,9 +23,10 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
 |$top|int|The number of items to return in a result set.|
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <code>|
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer <code>|
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.

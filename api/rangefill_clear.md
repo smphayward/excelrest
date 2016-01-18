@@ -12,9 +12,10 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill/clear
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <code>|
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer <code>|
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 

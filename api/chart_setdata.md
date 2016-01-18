@@ -10,9 +10,10 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/setData
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <code>|
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer <code>|
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.

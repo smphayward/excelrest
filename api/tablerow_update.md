@@ -11,9 +11,10 @@ PATCH /workbook/bindings(<id>)/table/rows(<index>)
 PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)
 ```
 ### Optional request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <code>|
+| Name       | Description|
+|:-----------|:-----------|
+| Authorization  | Bearer <code>|
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.

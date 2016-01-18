@@ -16,9 +16,10 @@ The following **scopes** are required to execute this API:
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <code>|
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer <code>|
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.
