@@ -12,6 +12,7 @@
 	* [TableRow](resources/tablerow.md): Represents a row in the table. 
 * [Chart](resources/chart.md): Represents a chart object in a workbook, which is a visual representation of underlying data.  
 * [NamedItem](resources/nameditem.md): Represents a defined name for a range of cells or a value. Names can be primitive named objects (as seen in the type below), range object, etc.
+* [Application](resources/application.md): Represents the Excel application that manages the workbook. Get the calculation mode of the workbook and perform calculation.
 * [Create Session](api/createsession.md): Create Excel workbook sessions. It is a good practice to create workbook session and pass it along with the request as part of the request header as it allows the server to link the API request to an existing in-memory copy of the file on the server. If a session ID is not provided, the server dynamically creates a session behind the scene. However, this requires additional server side processing and could add to the latency of the response. Session ID has a life span which gets extended with each usage or regresh. Once a session ID has expired, a new session session ID needs to be created. If an expired or invalid session token is provided as part of the request, the API will return an error indicating that the session ID is not valid. 		
 
 ## Programming Notes
