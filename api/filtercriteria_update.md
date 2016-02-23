@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "update_filtercriteria"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/criteria
+PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/columns(<id|name>)/filter/criteria
 Content-type: application/json
 Content-length: 146
 

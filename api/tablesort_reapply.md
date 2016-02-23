@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "tablesort_reapply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/reapply
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/sort/reapply
 ```
 
 ##### Response

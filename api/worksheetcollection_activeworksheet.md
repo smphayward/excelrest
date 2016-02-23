@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "worksheetcollection_activeworksheet"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets/ActiveWorksheet
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets/ActiveWorksheet
 ```
 
 ##### Response

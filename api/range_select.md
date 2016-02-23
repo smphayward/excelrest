@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "range_select"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/select
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/select
 ```
 
 ##### Response

@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "workbook_selectedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/SelectedRange
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/SelectedRange
 ```
 
 ##### Response

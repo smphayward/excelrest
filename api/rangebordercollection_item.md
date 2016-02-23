@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "rangebordercollection_item"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/borders/Item
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/format/borders/Item
 Content-type: application/json
 Content-length: 28
 

@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "create_tablerow_from_table"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/rows
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/rows
 Content-type: application/json
 Content-length: 45
 

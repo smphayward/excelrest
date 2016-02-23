@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "filter_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
 ```
 
 ##### Response

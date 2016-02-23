@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "table_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/Range
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/Range
 ```
 
 ##### Response

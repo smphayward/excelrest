@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "update_sortfield"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/fields
+PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/sort/fields
 Content-type: application/json
 Content-length: 126
 

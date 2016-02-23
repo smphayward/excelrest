@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_filtercriteria"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/criteria
+GET https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/columns(<id|name>)/filter/criteria
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

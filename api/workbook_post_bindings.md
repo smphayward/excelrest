@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "create_binding_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/bindings
+POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/bindings
 Content-type: application/json
 Content-length: 3
 
